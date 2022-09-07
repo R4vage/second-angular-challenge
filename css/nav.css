@@ -46,6 +46,10 @@
 
 }
 
-.header__nav__list li:nth-child(2){
+.header__nav__list li{
     border-left: 2px groove white;
+}
+
+.header__nav__list li:first-child{
+    border-left: unset;
 }
