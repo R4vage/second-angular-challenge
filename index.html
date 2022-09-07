@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First Challenge</title>
+    <meta name="description" content="First Challenge for Applaudo Studios's Trainee Program">
+    <meta name="author" content="Julian Marc">
+    <link rel="icon" href="/assets/first-steps.png">
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/first-steps.png" alt="Challenge Logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li><a href="index.html">Task List</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <section class="task-list" id="js-task-list">
+
+            <h2>Listado de gastos:</h2>
+            <menu class="task-list__filters">
+                <div class="task-list__search">
+                        <img src="assets/search.svg" id="js-task-list__search__button">
+                        <input type="text" id="js-task-list__search__input" placeholder="Search tasks">
+                </div>
+                <div class="task-list__filters__status">
+                    <p >Status: </p>
+                    <select class="task-list__filters__status__select" id="js-task-list__filters__status__select">
+                        <option selected>All</option>
+                        <option>Done</option>
+                        <option>Pending</option>
+                    </select>
+                </div>
+                <p class="task-list__filters__cross" id="js-task-list__filters__cross">X</p>
+            </menu>
+            <div class="table-wrapper">
+                <table class="task-list__table" id="js-task-list__table">
+                    
+                    <thead class="task-list__head">
+                        <tr class="task-list__row">
+                            <th>ID 
+                                <img src="assets/desc.svg" id="js-sortBy-id-true" class="js-sortBy-buttons">
+                                <img src="assets/asc.svg" id="js-sortBy-id-false" class="js-sortBy-buttons">
+                            </th>
+                            <th>Task 
+                                <img src="assets/desc.svg" id="js-sortBy-name-true" class="js-sortBy-buttons">
+                                <img src="assets/asc.svg" id="js-sortBy-name-false" class="js-sortBy-buttons">
+                            </th>
+                            <th>Asignee </th>
+                            <th>Status</th>
+                            <th>Time 
+                                <img src="assets/desc.svg" id="js-sortBy-time-true" class="js-sortBy-buttons">
+                                <img src="assets/asc.svg" id="js-sortBy-time-false" class="js-sortBy-buttons">
+                            </th>
+                        </tr>
+                        
+                    </thead>
+                    
+                    <tbody id="js-task-list__table__body">
+                        
+                    </tbody>
+                    
+                </table>
+                
+            </div>
+            <p class="task-list__warning" id="js-task-list__warning">Currently there are no tasks. Use the button below to add tasks</p>
+            <p class="task-list__warning" id="js-task-list__warning--no-results">Your search didn't return any results</p>
+            <button id="js-open-task-modal" class="task-list__add-task-button">Add Task</button>
+        </section>
+
+
+
+        <section id="js-task-modal" class="task-modal"> <!-- Que cubra toda la pantalla -->
+            <div class="task-modal__content">
+                <h3>Add task</h1>
+                <img src="assets/cross.png" class="add-task__cross" id="js-close-task-modal">
+                <form class="add-task__form" id="js-add-task__form">
+                    <p>ID: <input type="number" name="id" readonly class="add-task__form__id"></p>
+                    <p>Name:<input type="text" placeholder="Please Input a Task" max="100" required name="name"></p>
+                    <p>Asignee:
+                        <select name="asignee" id="js-form__asignee">
+                            <option value="Not Asigned" selected>Not Asigned</option>
+                            <option value="Alice">Alice</option>
+                            <option value="Frank">Frank</option>
+                            <option value="John">John</option>
+                            <option value="Mary">Mary</option>
+                        </select>
+                    </p>
+                    
+                    <div class="add-task__form__status">
+                        <p>Status:</p>
+                        <input type="radio" id="Done" name="status" value="Done"> 
+                        <label for="Done">Done</label>
+                        <input type="radio" id="Pending" name="status" value="Pending" checked>
+                        <label for="Pending">Pending</label><br>
+                    </div>
+                    <input type="submit" value="Add Task" id="js-add-task" name="submit" class="task-modal__add-task"> 
+
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div>
+            <p>First Challenge Applaudo Studios Trainee Program</p>
+            <p>Developed By Julian Marc</p>
+        </div>
+        <a href="https://applaudostudios.com" target="_blank"><img src="assets/applaudo.png"></a>
+        <a href="https://github.com/R4vage" target="_blank"> <img src="assets/gitHub.png" class="github-icon"></a>
+        <a href="www.linkedin.com/in/julianmarc" target="_blank"><img src="assets/linkedIn.png" class="linkedIn-icon"></a>
+
+    </footer>
+
+    <script src="js/scripts.todo.js"></script>
+</body>
+
+</html>

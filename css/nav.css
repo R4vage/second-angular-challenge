@@ -1,0 +1,51 @@
+
+
+
+/* Nav Styling */
+
+.header {
+    display: flex;
+    padding-inline: 1em;
+    background-color: var(--clr-nav);
+    align-items: center;
+    width: 100%;
+    color: var(--clr-white);
+    position: fixed;
+    z-index: 3;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 4px 2px 0px, rgba(60, 64, 67, 0.15) 0px 4px 3px 1px;
+}
+
+.header__logo img{
+    max-height: 3em;
+}
+
+.header__nav{
+    right: 0;
+    margin-left: auto;
+}
+
+.header__nav__list{
+    display: flex;
+    list-style: none;
+    height: 100%;   
+
+}
+
+.header__nav__list li a{
+    all: unset;
+    cursor: pointer;
+    background-color: var(--clr-nav);
+    transition: all 200ms ease-in-out;
+    padding-block: 1em;
+    padding-inline: 0.7em;
+    text-transform: uppercase;
+}
+
+.header__nav__list li a:hover{
+    background-color: var(--clr-main-dark);
+
+}
+
+.header__nav__list li:nth-child(2){
+    border-left: 2px groove white;
+}

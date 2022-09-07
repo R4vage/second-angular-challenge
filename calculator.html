@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First Challenge</title>
+    <meta name="description" content="First Challenge for Applaudo Studios's Trainee Program">
+    <meta name="author" content="Julian Marc">
+    <link rel="icon" href="/assets/first-steps.png">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/first-steps.png" alt="Challenge Logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li><a href="index.html">Task List</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculator" id="js-calculator">
+            <h1>Bonus Calculator</h1>
+            <form id="js-calculator__form">
+                <p>Salary: <input type="number" min="1" required name="salary" placeholder="Input salary per month" id="js-calculator__input-salary" step="0.01"></p>
+                <p>Worked less than a year? : </p>
+
+                <div>
+                    <input type="radio" id="js-less-than-a-year-radio" name="year-days" value="yes"> 
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="js-more-than-a-year-radio" name="year-days" value="no" checked>
+                    <label for="no">No</label><br>
+                </div>
+
+                <div id="js-calculator__input-years" class="calculator__input-years">Years: <input type="number" min="1" max="35" step="1" name="years" placeholder="Input years of employment" required></div>
+                <div id="js-calculator__input-days" class="calculator__input-days">Days: <input type="number" min="1" max="364" step="1" name="days" placeholder="Input days of employment"></div>
+                <input type="submit" value="Calculate" id="js-calculator__submit" class="calculator__submit calculator__submit-active">
+            </form>
+        </section>
+
+        <section class="results" id="js-results">
+            <form class="results__form" id="js-results__form">
+                <p>Salary per day: <input type="number" readonly name="salary-per-day"></p>
+                <p>Salary per Year: <input type="number" readonly name="salary-per-year"></p>
+                <p>Total Income: <input type="number" readonly name="total-income"></p>
+                <p>Bonus: <input type="number" readonly name="bonus"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>First Challenge Applaudo Studios Trainee Program</p>
+            <p>Developed By Julian Marc</p>
+        </div>
+        <a href="https://applaudostudios.com" target="_blank"><img src="assets/applaudo.png"></a>
+        <a href="https://github.com/R4vage" target="_blank"> <img src="assets/gitHub.png" class="github-icon"></a>
+        <a href="www.linkedin.com/in/julianmarc" target="_blank"><img src="assets/linkedIn.png" class="linkedIn-icon"></a>
+    </footer>
+
+    <script src="js/scripts.calculator.js" ></script>
+</body>
+
+</html>

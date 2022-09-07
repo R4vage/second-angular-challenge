@@ -1,0 +1,38 @@
+
+footer {
+    width: 100%;
+    background-color: var(--clr-footer);
+    height: 7.5rem;
+    margin-top: auto;
+    bottom: 0;
+    color: var(--clr-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+footer img {
+    width: 4em;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    display: none;
+}
+
+.github-icon{
+    background-color: var(--clr-main-lighter);
+    border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+    footer p {
+        display: inherit;
+    }
+}

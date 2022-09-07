@@ -1,0 +1,52 @@
+
+
+:root {
+    --clr-nav: #006369;
+    --clr-footer: #010721;
+    --clr-main-dark: #002B5B;
+    --clr-main: #2B4865;
+    --clr-main-light: #256D85;
+    --clr-main-lighter: #8FE3CF;
+    --clr-black: #0f0f0f;
+    --clr-white: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ancho */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Base */
+  ::-webkit-scrollbar-track {
+    top: -10px;
+    background: var(--clr-main-lighter);
+  }
+  
+  /* Scroll */
+  ::-webkit-scrollbar-thumb {
+    background: var(--clr-main);
+   
+  }
+  
+  /* Hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--clr-main-dark);
+  }
