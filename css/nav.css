@@ -13,16 +13,14 @@
     position: fixed;
     z-index: 3;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 4px 2px 0px, rgba(60, 64, 67, 0.15) 0px 4px 3px 1px;
+    justify-content: space-between;
 }
 
 .header__logo img{
     max-height: 3em;
 }
 
-.header__nav{
-    right: 0;
-    margin-left: auto;
-}
+
 
 .header__nav__list{
     display: flex;

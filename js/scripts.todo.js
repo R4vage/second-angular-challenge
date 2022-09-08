@@ -1,7 +1,7 @@
 let currentSortBy = ['id', true]
 
 
-const taskModal = document.getElementById ('js-task-modal')
+
 const taskForm = document.getElementById ('js-add-task__form')
 const tableWarning = document.getElementById ('js-task-list__warning')
 const tableNoResults = document.getElementById ('js-task-list__warning--no-results')
@@ -140,7 +140,7 @@ class Task {
 
 class UI {
     domTaskList = document.getElementById ('js-task-list__table__body')
-    
+    taskModal = document.getElementById ('js-task-modal')
     createNewRow (task) {
         let newTr = document.createElement ('tr') 
         newTr.className= `task-list__row`
@@ -202,9 +202,11 @@ class UI {
         });
     }
 
-    closeModal () {taskModal.style.display = 'none'}
+    closeModal () {
+        
+        this.taskModal.style.display = 'none'}
 
-    openModal () {taskModal.style.display = 'flex'}
+    openModal () {this.taskModal.style.display = 'flex'}
 
     modifyTaskRow (task) {
         let rowTask = document.getElementById (`js-task-row-${task.id}`)
@@ -346,8 +348,8 @@ searchButton.onclick = function () { searchTasks()}
 
 /* Por si el usuario presiona enter estando en el input */
 
-searchInput.addEventListener ( "keydown", function (e) {
-    if (e.code === "Enter") {
+searchInput.addEventListener ( "keypress", function (e) {
+    if (e.code === 'Enter') {
         searchTasks()
     }
 })
