@@ -3,6 +3,184 @@ main{
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    margin-top: 3.5em;
+    margin-top: 3em;
     margin-bottom: 1em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+.main-title{
+    width: 100%;
+    padding: 1em;
+    z-index: 4;
+    background-color: white;
+}
+
+.search-profile{
+    position: relative;
+    transition: all 200ms ease-in-out;
+    box-shadow: 5px 4px 1px 1px rgb(87, 86, 86);
+    margin-bottom: 1em;
+}
+
+.search-reset{
+    font-weight: 700;
+    margin-inline:0.5em ;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+    overflow-x: hidden;
+}
+
+.search-profile__search{
+    background-color: var(--clr-header-github);
+    width: 320px;
+    position: relative;
+    padding: 0.2em;
+    z-index: 2;
+    
+    box-shadow: 5px -1px 1px 1px rgb(87, 86, 86);
+}
+
+.search-profile__form{
+    display: flex;
+    align-items: center;
+    height: 2em;
+    background-color: white;
+    margin: 1em;
+    z-index: 2;
+    transition: all 200ms ease-in-out;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.search-profile__form img{
+    cursor: pointer;
+    border-right: 1px solid grey;
+}
+
+.search-profile__form input{
+    all: unset;
+    width: 90%;
+    border: none;
+    color: black;
+    margin-left: 0.5em;
+    
+    
+
+}
+
+.search-profile__results{
+    background-color: var(--clr-header-github);
+   position: absolute;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    transition: margin-top 200ms ease-in-out;
+    margin-top: -100%;
+    z-index: 1;
+    box-shadow: 5px 5px 1px 1px rgb(87, 86, 86);
+    border-radius: 0 0 7px 7px;
+    padding-top: 1em;
+}
+
+.search-profile__results__row{
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-header-github);
+    padding-inline: 1em;
+    padding-block: 0.7em;
+    cursor: pointer;
+    color: var(--clr-white);
+    transition: all 200ms ease-in-out;
+}
+
+.search-profile__results__warning{
+    color: var(--clr-white);
+    background-color: var(--clr-header-github);
+    text-align: center;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+.search-profile__results__row:hover{
+    background-color: antiquewhite;
+    color: var(--clr-black);
+    box-shadow: 6px 0px 0 0 white;
+    z-index: 4;
+}
+
+
+.search-profile__results__row button{
+    all: unset;
+}
+
+
+.display-profile{
+    background-color: var(--clr-main);
+    color: white;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+
+   
+
+}
+
+.display-profile__main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-profile__form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.display-profile__form label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-profile__form label input{
+    width: 60%;
+    text-align: right;
+}
+
+
+@media (min-width:480px){
+
+    .display-profile__form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+    }
+    .display-profile img{
+        max-width: 25em;
+        align-self: center;
+    }
+}
+
+
+@media (min-width:769px){
+
+    .display-profile{
+        width: 85%;
+    }
+
+    .display-profile img{
+        max-width: 30em;
+        align-self: center;
+    }
+
+    .display-profile__form label input{
+        width: 70%;
+    }
+
 }

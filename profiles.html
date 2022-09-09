@@ -15,10 +15,52 @@
 </head>
 <body>
     <main>
-        <form id="search-profile">
-            <input type="text">
-            <input type="submit">
-        </form>
+        <h1 class="main-title">Github Profiles</h1>
+        <section class="search-profile">
+            <div class="search-profile__search">
+                <div id="search-profile__form" class="search-profile__form">
+                    <img src="assets/search.svg" id="search-button">
+                    <input type="text" id="search-profile__form__input" placeholder="Input a Github User" name="username" autocomplete="off">
+                    <p class="search-reset" id="search-reset">X</p>
+                </div>
+            </div>
+            <div class="search-profile__results" id="search-profile__results">
+                <div class="search-profile__results__row">No results </div>
+            </div>
+        </section>
+       
+        <section class="display-profile" id="display-profile">
+            <h1 class="display-profile__name" id="display-profile__name">Julian Marc</h1>
+            <div class="display-profile__main">
+                <img src="https://avatars.githubusercontent.com/u/27870148?v=4" id="display-profile__img">
+                <h1>User Info</h1>
+                <form class="display-profile__form" id="display-profile__form">
+                    <label for="followers"> Followers:<input type="number" readonly name="followers"></label>
+                    <label for="following"> Following:<input type="number" readonly name="following"></label>
+                    <label for="company"> Company:<input type="text" readonly name="company"></label>
+                    <label for="website"> Website:<input type="text" readonly name="website"></label>
+                    <label for="location"> Location:<input type="text" readonly name="location"></label>
+                    <label for="member-since"> Member since:<input type="text" readonly name="member-since"></label>
+                    <label for="link-to-profile"> Github Link:<input type="text" readonly name="link-to-profile"></label>      
+                </form>
+            </div>
+            <h2>Repositories</h2>
+            <label for="number-repositories">Total repositories:<input type="number" readonly name="number-repositories" form="display-profile__form"></label>
+            <table class="repositories-list">
+                <thead class="repositories-list__head">
+                    <tr class="repositories-list__row">
+                        <th>Name </th>
+                        <th>N⁰ Stars</th>
+                        <th>N⁰ Forks </th>
+                        <th>N⁰ Watchers</th>
+                        <th>Link </th>
+                    </tr>
+                </thead>
+                <tbody id="repositories-list__body">
+
+                </tbody>
+            </table>
+        </section>
 
     </main>
 
