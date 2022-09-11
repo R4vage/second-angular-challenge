@@ -339,6 +339,7 @@ function searchTasks () {
         tableNoResults.style.display = 'block'
         userInterface.replaceTaskList ([])
     } else {
+        clearFiltersButton.style.display = 'block'
         tableNoResults.style.display = 'none'
         userInterface.replaceTaskList (taskList.currentItems)
     }
