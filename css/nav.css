@@ -17,7 +17,7 @@
 }
 
 .header__logo img{
-    max-height: 3em;
+    max-height: 2.5em;
 }
 
 
@@ -26,7 +26,7 @@
     display: flex;
     list-style: none;
     height: 100%;   
-
+    font-size: x-small
 }
 
 .header__nav__list li a{
@@ -50,4 +50,21 @@
 
 .header__nav__list li:first-child{
     border-left: unset;
+}
+
+
+@media (min-width:350px){
+    .header__nav__list{
+        font-size: small;
+    }
+}
+
+@media (min-width:450px){
+    .header__nav__list{
+        font-size: medium;
+    }
+    .header__logo img{
+        max-height: 3em;
+    }
+
 }

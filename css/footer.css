@@ -2,7 +2,7 @@
 footer {
     width: 100%;
     background-color: var(--clr-footer);
-    height: 7.5rem;
+    height: 6rem;
     margin-top: auto;
     bottom: 0;
     color: var(--clr-white);
@@ -13,7 +13,7 @@ footer {
 }
 
 footer img {
-    width: 4em;
+    width: 3em;
     cursor: pointer;
     transition: all 200ms ease-in-out;
 }

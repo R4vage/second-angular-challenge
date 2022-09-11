@@ -10,6 +10,7 @@
     --clr-black: #0f0f0f;
     --clr-white: #fff;
     --clr-header-github: #161b22;
+    --clr-github:#6e5494;
 
 }
 
@@ -22,6 +23,11 @@
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: auto;
 }
 
 body{
@@ -43,11 +49,11 @@ body{
   
   /* Scroll */
   ::-webkit-scrollbar-thumb {
-    background: var(--clr-main);
+    background: var(--clr-main-dark);
    
   }
   
   /* Hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--clr-main-dark);
+    background: var(--clr-nav);
   }
