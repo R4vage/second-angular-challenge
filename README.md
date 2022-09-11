@@ -1,8 +1,10 @@
-# First Challenge
+# Second Challenge
 
 Author: Julian Marc
 
-The project is divided in two sections:
+The project is divided in three sections.
+
+The first two sections have the same purpose as they did in the first challenge, except that the to-do List has been refactored using classes and improved in its UI and UX
 
 To-do List.
 
@@ -15,4 +17,8 @@ Bonus Calculator
     It outputs the salary per day, per year, current total income and bonus.
     Its parts are the input data form, and the output data results, which have been cojoined through css wizardry.
 
-It also has a simple yet functional Nav and footer bar.
+The last section is the a Github Profile Searcher
+
+    It allows the user to search for a github username, and displays info regarding said username, plus its repositories, if the user has any.
+
+The project also has a simple yet functional Nav and footer bar.
