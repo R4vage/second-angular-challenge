@@ -84,7 +84,7 @@ calculatorForm.onsubmit = function (event){
 }
     
 
-/* Scripts apertura de sección de resultados */
+/* Scripts for showing results */
 
 
 

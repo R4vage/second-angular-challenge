@@ -1,7 +1,7 @@
 class Users {
     constructor () {
         this.currentUser = {} 
-        this.repoAmount = {}
+
     }
 
     options = {
@@ -53,11 +53,6 @@ class Users {
             UI.openWarningModal(`An error has ocurred: ${error}`) 
         }  
     }
-
-    calculatePages(totalRepos){
-        return Math.ceil(totalRepos/10)
-    }
-
 }
 
 class UI {  
@@ -209,8 +204,7 @@ class UI {
     }
 
     static addPages (currentPage, totalPages){
-        console.log(totalPages)
-        console.log(users.currentUser)
+
         if (totalPages > 1){ 
             UI.pages.innerHTML = ''
             UI.pages.style.display = 'flex'
