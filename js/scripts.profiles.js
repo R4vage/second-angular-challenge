@@ -7,7 +7,7 @@ class Users {
     options = {
         method: "GET",
         headers: {
-            Authorization: "token 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"
+            Authorization: "token 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"
         }
     }
     
